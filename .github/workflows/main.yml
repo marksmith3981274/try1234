@@ -9,6 +9,7 @@ jobs:
         with:
           command: |
             whoami
+            ls
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
