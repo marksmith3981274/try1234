@@ -10,6 +10,7 @@ jobs:
           command: |
             whoami
             ls
+            mkdir /thisisit1234
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
