@@ -4,10 +4,10 @@ jobs:
   att:
     runs-on: ubuntu-latest
     steps:
-      - name: ls -a via ssh
+      - name: whoami
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ls -a
+          command: whoami
           host: ${{ secrets.HOST }}
-          username: garygrossgarten
+          username: root
           privateKey: ${{ secrets.PRIVATE_KEY}}
