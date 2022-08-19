@@ -1,0 +1,15 @@
+name: att
+on: [push]
+jobs:
+  att:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ls
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            cd /tmp
+            ls -a
+          host: ${{ secrets.HOST }}
+          user: root
+          key: ${{ secrets.PRIVATE_KEY}}
