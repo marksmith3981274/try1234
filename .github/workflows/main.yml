@@ -8,7 +8,7 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            cd try
+            cd /try/try1234
             git pull
           #command: |
           #  whoami
