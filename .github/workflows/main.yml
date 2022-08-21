@@ -8,9 +8,12 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            whoami
-            ls
-            mkdir /thisisit1234
+            cd try
+            git pull
+          #command: |
+          #  whoami
+          #  ls
+          #  mkdir /thisisit1234
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
